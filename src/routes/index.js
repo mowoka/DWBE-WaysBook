@@ -9,7 +9,12 @@ const { uploadBook } = require("../middlewares/uploadBook");
 const { uploadProfile } = require("../middlewares/uploadProfile");
 const { uploadProof } = require("../middlewares/uploadProof");
 // Get Controllers
-const { register, login, cekAuth } = require("../controllers/registerLogin");
+const {
+  register,
+  login,
+  cekAuth,
+  registerAdmin,
+} = require("../controllers/registerLogin");
 const {
   addBook,
   getBook,
@@ -26,6 +31,7 @@ const {
 // Declaire Routes
 // User
 router.post("/register", register);
+router.post("/register-admin", registerAdmin);
 router.post("/login", login);
 router.get("/check-auth", authenticated, cekAuth);
 
