@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "root",
+    "password": null,
+    "database": "batch20-bookstore",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "eowmjfdmibtgpz",
+    "password": "0857bea690b5bb79bbc8c59e7a77ff6f608b9bc34bec0157c92ff175b1daad1f",
+    "database": "d31ka0kdr9rmvv",
+    "host": "ec2-54-146-73-98.compute-1.amazonaws.com",
+    "dialect": "postgres"
+  }
+}
